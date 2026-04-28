@@ -1,4 +1,4 @@
-#include "ScavTrap.hpp"
+#include "../includes/ScavTrap.hpp"
 #include <iostream>
 
 void ScavTrap::attack(const std::string &target)

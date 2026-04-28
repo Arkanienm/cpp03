@@ -1,7 +1,7 @@
 #include <iostream>
 #include <ostream>
-#include "ClapTrap.hpp"
-#include "ScavTrap.hpp"
+#include "../includes/ClapTrap.hpp"
+#include "../includes/ScavTrap.hpp"
 
 int main(void)
 {

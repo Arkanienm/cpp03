@@ -1,8 +1,9 @@
 #include <iostream>
 #include <ostream>
-#include "ClapTrap.hpp"
-#include "ScavTrap.hpp"
-#include "FragTrap.hpp"
+#include "../includes/ClapTrap.hpp"
+#include "../includes/ScavTrap.hpp"
+#include "../includes/FragTrap.hpp"
+#include "../includes/DiamondTrap.hpp"
 
 int main(void)
 {
@@ -69,5 +70,29 @@ int main(void)
 	std::cout << std::endl;
 	frag3.beRepaired(15);
 	frag3.highFivesGuys();
+	std::cout << std::endl;
+
+	std::cout << "DiamondTrap Tests" << std::endl;
+
+	DiamondTrap diamond("Diamond1");
+	std::cout << std::endl;
+	diamond.attack("Frag6");
+	std::cout << std::endl;
+	diamond.takeDamage(5);
+	std::cout << std::endl;
+	diamond.beRepaired(15);
+	std::cout << std::endl;
+
+	DiamondTrap diamond2(diamond);
+	std::cout << std::endl;
+	DiamondTrap diamond3 = diamond2;
+	std::cout << std::endl;
+
+	diamond3.takeDamage(5);
+	std::cout << std::endl;
+	diamond3.beRepaired(15);
+	diamond3.highFivesGuys();
+	diamond2.guardGate();
+	diamond.whoAmI();
 	std::cout << std::endl;
 }
